@@ -42,7 +42,7 @@ def prereg():
 @app.route('/return_emails', methods=['GET'])
 def return_emails():
     emails = User.query.all()
-    return {'status': 'success', 'data': emails}, 200
+    return jsonify(emails)
     
 
 
