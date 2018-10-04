@@ -27,3 +27,16 @@ python
 >>> from app import db
 >>> db.create_all()
 >>> exit()
+
+
+Create Heroku acount and install heroku tool belt
+
+
+touch Procfile
+touch requirements.txt
+
+
+
+pip3 install gunicorn
+pip3 install Flask-Heroku
+pip3 freeze > requirements.txt
