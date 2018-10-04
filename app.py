@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from flask.ext.sqlalchemy import SQLAlchemy
 
 from flask.ext.heroku import Heroku
@@ -41,7 +41,7 @@ def prereg():
 
 @app.route('/return_emails', methods=['GET'])
 def return_emails():
-    all_emails = db.session.query(User).all()
+    all_emails = db.session.query(User.email).all()
 
     return jsonify(all_emails)
 
