@@ -40,3 +40,18 @@ touch requirements.txt
 pip3 install gunicorn
 pip3 install Flask-Heroku
 pip3 freeze > requirements.txt
+
+
+git init
+git add .
+git commit -m "initial commit"
+heroku create name-of-your-app
+
+git push heroku master
+
+Add heroku add-on for postgresql database.
+
+update data connection using your heroku data
+
+
+
