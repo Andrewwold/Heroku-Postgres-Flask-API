@@ -41,8 +41,10 @@ def prereg():
 
 @app.route('/return_emails', methods=['GET'])
 def return_emails():
-    emails = User.query.all()
-    return jsonify(emails)
+    all_emails = db.session.query(User).all()
+
+    return jsonify(all_emails)
+
     
 
 
