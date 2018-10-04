@@ -41,10 +41,8 @@ def prereg():
 
 @app.route('/return_emails', methods=['GET'])
 def return_emails():
-    emails = db.session.query(User).all()
-    return emails
-    # return render_template("emails.html",
-    #                        email="Emails")
+    emails = User.query.all()
+    return {'status': 'success', 'data': emails}, 200
     
 
 
