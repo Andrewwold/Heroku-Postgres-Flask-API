@@ -40,7 +40,11 @@ def prereg():
     return render_template('index.html')
 
 @app.route('/return_emails', methods=['GET'])
-    db.session.query(User)
+def return_emails():
+    emails = db.session.query(User).all()
+    return emails
+    # return render_template("emails.html",
+    #                        email="Emails")
     
 
 
