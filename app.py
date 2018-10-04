@@ -39,6 +39,11 @@ def prereg():
             return render_template('success.html')
     return render_template('index.html')
 
+@app.route('/return_emails', methods=['GET'])
+    db.session.query(User)
+    
+
+
 if __name__ == '__main__':
     app.debug = True
     app.run()

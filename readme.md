@@ -14,6 +14,8 @@ mkdir templates
 touch app.py
 touch .gitignore
 
+create index.html and success.html inside of templets
+
 
 pip3 install Flask
 pip3 install psycopg2
@@ -21,7 +23,7 @@ pip3 install Flask-SQLAlchemy
 
 
 
-to create database 
+to create database table
 
 python
 >>> from app import db
@@ -33,6 +35,7 @@ Create Heroku acount and install heroku tool belt
 
 
 touch Procfile
+add (web: gunicorn app:app) to Procfile (do not add the parens)
 touch requirements.txt
 
 
@@ -52,6 +55,17 @@ git push heroku master
 Add heroku add-on for postgresql database.
 
 update data connection using your heroku data
+
+add
+
+commit
+
+push back up to heroku
+
+heroku run python
+>>> from app import db
+>>> db.create_all()
+>>> exit()
 
 
 
