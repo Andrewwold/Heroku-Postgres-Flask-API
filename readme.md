@@ -48,9 +48,42 @@ So to get Homebrew I will go to the link and I will run the link they provide in
 
 Get Homebrew installed and we will continue!....
 
-pip3 install virtualenv
+Ok welcome back! Now lets run `brew install python3` in our terminal.
 
-virtualenv venv (to start virtual enviroment)
+After that installs. CONGRATS!!! You can now work with Python3!
+
+Now, if you are looking for a guide like this odds are you already know some python, and you are looking to just move on to the next level. However, I wanted to include these steps, because, with all the ways we can now work with code online (https://repl.it/languages, as an example, https://aws.amazon.com/cloud9/, as another), It is quite possible that some one may find this guide and not work on their own local machine.
+
+With that in mind I included at least how to set up on your local machine. Now that, that is done. I am not going to do "Hello world" or anthing like that, I am moving forward at this point with the assumption you know at least some python.
+
+Lets now create our project!
+
+Access your terminal, and navigate to where you would like to create your app!
+
+Once you are there lets create a folder to hold your project!
+
+On a mac run `mkdir python_heroku_api` Now you can name this file what ever you like, it really does not matter. I chose the name just to keep things simple and apparent. I am going to try and when ever possible name things very simply to try and reduce possible confusion.
+
+Lets now go into our new app root folder `cd python_heroku_api`
+
+Ok, now lets create our main app file `touch app.py` will create a new python file for us to play with.
+
+Now that we have a base directory and a file, lets set up our coding enviroment.
+
+Lets start by getting our enviroment package.
+Now python3 now include pip by default,so we do not need to install that, (or should not need to)
+
+We do however need to install pipenv. We are going to use Homebrew again, so in your terminal, inside of your root directory, run `brew install pipenv` 
+
+If you do not want to use Homebrew you can run `pip3 install pipenv`
+
+
+(Starting pointfor next entry)
+
+
+
+
+
 
 
 mkdir static
