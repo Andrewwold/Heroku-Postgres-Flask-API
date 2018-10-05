@@ -7,25 +7,25 @@ All it is going to "Currently" do is let a user collect an email through a form,
 
 Packages and software you will need with this app.
 
-. postgresql (currently working with the mac postgres app.)
+* postgresql (currently working with the mac postgres app.)
 	https://www.postgresql.org/docs/
-. pipenv
+* pipenv
 	https://pipenv.readthedocs.io/en/latest/
-. pip3
+* pip3
 	https://pip.pypa.io/en/stable/
-. python 3.7
+* python 3.7
 	https://docs.python.org/3/
-. Flask
+* Flask
 	http://flask.pocoo.org/docs/1.0/
-. psycopg2
+* psycopg2
 	http://initd.org/psycopg/docs/
-. Flask-SQLAlchemy
+* Flask-SQLAlchemy
 	http://flask-sqlalchemy.pocoo.org/2.3/
-. A Heroku Account
+* A Heroku Account
 	https://devcenter.heroku.com/categories/reference
-. gunicorn
+* gunicorn
 	http://docs.gunicorn.org/en/stable/index.html
-. Flask-Heroku
+* Flask-Heroku
 	(can not seem to find any docs I really like on this... It works with flask and heroku to help with hosting.)
 
 # I recomend installing a virtual enviroment to help control your pip3 files etc. Though not technicaly a nessesity it is a good practice to isolate enviroments in my opinion, and so I will walk through how to do so here.
