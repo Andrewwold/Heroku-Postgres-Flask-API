@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 
-from flask.ext.heroku import Heroku
+from flask_heroku import Heroku
 
 app = Flask(__name__)                                               #enter desired data base here
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://dwzbepecelznac:d2a5da13e4526615275c87861219d0a1edd953678c46b49ab1bbc1d4caabfb8c@ec2-75-101-153-56.compute-1.amazonaws.com:5432/ddvnnv3uogu6aa'
