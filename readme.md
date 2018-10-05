@@ -28,7 +28,7 @@ Packages and software you will need with this app.
 * Flask-Heroku
 	(can not seem to find any docs I really like on this... It works with flask and heroku to help with hosting.)
 
-# I recomend installing a virtual enviroment to help control your pip3 files etc. Though not technicaly a nessesity it is a good practice to isolate enviroments in my opinion, and so I will walk through how to do so here.
+## I recomend installing a virtual enviroment to help control your pip3 files etc. Though not technicaly a nessesity it is a good practice to isolate enviroments in my opinion, and so I will walk through how to do so here.
 
 Lets first install python3.
 
