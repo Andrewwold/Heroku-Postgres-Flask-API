@@ -1,3 +1,8 @@
+#So We are going to create a Simple API using postgresql and host it on heroku.
+All it is going to do is let a user collect an email through a form, and provide an endpoint that will return those emails as a JSON object.
+
+(This is an ongoing app, and will continue to develop more sections and build outs, my goal is to provide not just the code, but a clear walk through on how to create this on your own)
+
 
 install postgresql
 (create desired database)
