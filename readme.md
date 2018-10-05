@@ -28,10 +28,25 @@ Packages and software you will need with this app.
 * Flask-Heroku
 	(can not seem to find any docs I really like on this... It works with flask and heroku to help with hosting.)
 
-## I recomend installing a virtual enviroment to help control your pip3 files etc. Though not technicaly a nessesity it is a good practice to isolate enviroments in my opinion, and so I will walk through how to do so here.
+## I recomend installing a virtual enviroment to help control your pip3 files etc. Though not technicaly a nessesity it is a good practice to isolate enviroments in my opinion, and so I will walk through how to do so on this app.
 
 Lets first install python3.
 
+* First here is the link to install python 3.7 https://www.python.org/downloads/
+
+#### I am going to walk through how to install on a mac, but if you are working on a pc, or other os, etc, feel free to use the link, install, and then come back.
+
+I am going to install python using Homebrew, (https://brew.sh/).
+
+Before we install Homebrew we have to have install Apple's Xcode, if you do not have it already.
+
+run `xcode-select --install` in your terminal, in may take a while to install.
+
+So to get Homebrew I will go to the link and I will run the link they provide in my terminal.
+ `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+ Above command is the one from the Hombrew site copied on OCT, 4th 2018.
+
+Get Homebrew installed and we will continue!....
 
 pip3 install virtualenv
 
