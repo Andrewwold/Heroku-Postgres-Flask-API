@@ -77,6 +77,26 @@ We do however need to install pipenv. We are going to use Homebrew again, so in 
 
 If you do not want to use Homebrew you can run `pip3 install pipenv`
 
+Now that we have pipenv, lets set it up for our project.
+
+run `pipenv install` in the terminal.
+
+We are now going to use pipenv to install all of the packages we will need for this program.
+
+`pipenv install Flask`
+`pipenv install psycopg2`
+`pipenv install Flask-SQLAlchemy`
+`pipenv install gunicorn`
+`pipenv install Flask-Heroku`
+
+You will see we have a `Pipfile`, and a `Pipfile.lock` added to our program.
+
+We can work with our enviroment by running `pipenv shell` in our terminal.
+
+
+
+
+
 
 (Starting pointfor next entry)
 
