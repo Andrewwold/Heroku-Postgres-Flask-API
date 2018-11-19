@@ -112,7 +112,7 @@ app = Flask(__name__)
 # Set "homepage" route
 @app.route('/')
 def home():
-    return "<h1>Welcome to my page!</h1>"
+    return "<h1>Welcome to my page!</h1>" # We have to put this text in hHTML tags so it will render on the page, as this is a python file, and the browser can not read python. By returning a string value, and putting in actual HTML tags, we can see a result. This is temporary and just a test to make sure our code is working.
 
 # Setting up the code that will allow our app to run, once we call the file.
 # We could just put app.run() with no if statement, but this is considered a better practice. For more information here is a link, https://docs.python.org/3/library/__main__.html
