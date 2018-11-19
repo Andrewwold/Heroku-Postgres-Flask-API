@@ -112,7 +112,7 @@ app = Flask(__name__)
 # Set "homepage" route
 @app.route('/')
 def home():
-    return "<h1>Welcome to my page!</h1>" # We have to put this text in hHTML tags so it will render on the page, as this is a python file, and the browser can not read python. By returning a string value, and putting in actual HTML tags, we can see a result. This is temporary and just a test to make sure our code is working.
+    return "<h1>Welcome to my page!</h1>" # We have to put this text in HTML tags so it will render on the page, as this is a python file, and the browser can not read python. By returning a string value, and putting in actual HTML tags, we can see a result. This is temporary and just a test to make sure our code is working.
 
 # Setting up the code that will allow our app to run, once we call the file.
 # We could just put app.run() with no if statement, but this is considered a better practice. For more information here is a link, https://docs.python.org/3/library/__main__.html
@@ -122,7 +122,21 @@ if __name__ == '__main__':
     app.run()
 ```
 
+Now lets spin up our app!!
 
+type `pipenv shell` to start our shell, and then type `python app.py` 
+This will start our server and you can now go to the local host, to see our new home page!
+
+If you do not know how to find the local host, look for this code in your terminal after starting your session.
+
+```
+Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+http://127.0.0.1:5000/ is where your code is being hosted, it can also be called in your browser as http://localhost:5000/, if yours says http://127.0.0.1:3000/ then it is called as http://localhost:3000/, and so on.
+
+You should now see our first message! Welcome to my page!
+
+Good job, next we will move on to removing our temporary welcome message to using a actual HTML page.
 
 (Starting pointfor next entry)
 
