@@ -23,6 +23,8 @@ Packages and software you will need with this app.
 	http://flask-sqlalchemy.pocoo.org/2.3/
 * A Heroku Account
 	https://devcenter.heroku.com/categories/reference
+* The Heroku CLI installed on your computer
+	https://devcenter.heroku.com/categories/reference	
 * gunicorn
 	http://docs.gunicorn.org/en/stable/index.html
 * Flask-Heroku
@@ -71,7 +73,7 @@ Ok, now lets create our main app file `touch app.py` will create a new python fi
 Now that we have a base directory and a file, lets set up our coding enviroment.
 
 Lets start by getting our enviroment package.
-Now python3 now include pip by default,so we do not need to install that, (or should not need to)
+Now python3 now includes pip by default,so we do not need to install that, (or should not need to)
 
 We do however need to install pipenv. We are going to use Homebrew again, so in your terminal, inside of your root directory, run `brew install pipenv` 
 
@@ -83,18 +85,42 @@ run `pipenv install` in the terminal.
 
 We are now going to use pipenv to install all of the packages we will need for this program.
 
-`pipenv install Flask`
-`pipenv install psycopg2`
-`pipenv install Flask-SQLAlchemy`
-`pipenv install gunicorn`
-`pipenv install Flask-Heroku`
+* `pipenv install psycopg2`  "Allows us to work with postgrsql"
+* `pipenv install Flask-SQLAlchemy` "helps us work with python and connecting to our database"
+* `pipenv install gunicorn` "Helps us connect to Heroku"
+* `pipenv install Flask-Heroku` "Is our connection between Flask and our hosting platform heroku"
 
 You will see we have a `Pipfile`, and a `Pipfile.lock` added to our program.
 
 We can work with our enviroment by running `pipenv shell` in our terminal.
 
+Now that we are within our enviroment, let start putting our project together.
+
+We have our Project folder, and we have our app.py.
+
+Now lets start putting some code into our app.py, insert the following code block. (I have added comments on what everything is doing, so take a few min to see what our code is doing.)
+
+```
+# We import the tools/libraries that we plan on using at the top of our file
+# For now we are just importing flask.
+from flask import Flask
+
+# Setting up the connection to flask,
+app = Flask(__name__)
 
 
+# Set "homepage" route
+@app.route('/')
+def home():
+    return "<h1>Welcome to my page!</h1>"
+
+# Setting up the code that will allow our app to run, once we call the file.
+# We could just put app.run() with no if statement, but this is considered a better practice. For more information here is a link, https://docs.python.org/3/library/__main__.html
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run()
+```
 
 
 
